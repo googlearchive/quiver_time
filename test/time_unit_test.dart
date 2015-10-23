@@ -1,4 +1,4 @@
-// Copyright 2013 Google Inc. All Rights Reserved.
+// Copyright 2014 Google Inc. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,23 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-library quiver.iterables.cycle_test;
+library quiver.time_unit.test;
 
+import 'package:quiver_time/time_unit.dart';
 import 'package:test/test.dart';
-import 'package:quiver/iterables.dart';
 
 main() {
-  group('cycle', () {
-    test("should create an empty iterable given an empty iterable", () {
-      expect(cycle([]), []);
-      expect(cycle([]).isEmpty, true);
-      expect(cycle([]).isNotEmpty, false);
-    });
-
-    test("should cycle its argument", () {
-      expect(cycle([1, 2, 3]).take(7), [1, 2, 3, 1, 2, 3, 1]);
-      expect(cycle([1, 2, 3]).isEmpty, false);
-      expect(cycle([1, 2, 3]).isNotEmpty, true);
+  group('time units', () {
+    test('are defined', () {
+      expect(aMicrosecond, isNotNull);
+      expect(aMillisecond, isNotNull);
+      expect(aSecond, isNotNull);
+      expect(aMinute, isNotNull);
+      expect(anHour, isNotNull);
+      expect(aDay, isNotNull);
+      expect(aWeek, isNotNull);
     });
   });
 }
