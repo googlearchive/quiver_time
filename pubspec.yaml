@@ -12,6 +12,7 @@ authors:
 - Sean Eagan <seaneagan1@gmail.com>
 - Victor Berchet <victor@suumit.com>
 description: Utilities for working with time
+homepage: https://github.com/QuiverDart/quiver_time
 environment:
   sdk: '>=1.8.0 <2.0.0'
 dev_dependencies:
