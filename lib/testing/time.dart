@@ -20,8 +20,9 @@ typedef int Now();
 /// A [Stopwatch] implementation that gets the current time in microseconds via
 /// a user-supplied function.
 class FakeStopwatch implements Stopwatch {
+  final int frequency;
+
   Now _now;
-  int frequency;
   int _start;
   int _stop;
 
