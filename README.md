@@ -10,6 +10,11 @@ Utilities for working with time.
 
 [API Docs](http://www.dartdocs.org/documentation/quiver_time/latest)
 
+`Clock` provides points in time relative to the current point in time, for
+example: now, 2 days ago, 4 weeks from now, etc. For tesability, use Clock
+rather than other ways of accessing time, like `new DateTime()`, so that you
+can use a fake time function in your tests to control time.
+
 `aMicrosecond`, `aMillisecond`, `aSecond`, `aMinute`, `anHour`, `aDay`, and
 `aWeek` are unit duration constants to allow writing for example:
 
