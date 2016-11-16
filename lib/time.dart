@@ -14,6 +14,5 @@
 
 library quiver.time;
 
-
 export 'clock.dart';
 export 'time_unit.dart';
