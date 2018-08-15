@@ -39,7 +39,7 @@ const _DAYS_IN_MONTH = const [
 ];
 
 int _daysInMonth(int year, int month) =>
-    (month == DateTime.FEBRUARY && _isLeapYear(year))
+    (month == DateTime.february && _isLeapYear(year))
         ? 29
         : _DAYS_IN_MONTH[month];
 
